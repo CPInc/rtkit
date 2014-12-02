@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency('dicom', '0.9.5')
-  s.add_dependency('narray', '0.6.0.8')
+  s.add_dependency('narray', '~> 0.6.0')
 
   s.add_development_dependency('bundler', '~> 1.5')
   s.add_development_dependency('mocha', '~> 0.14')
