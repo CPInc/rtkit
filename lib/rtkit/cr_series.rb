@@ -35,7 +35,7 @@ module RTKIT
       time = dcm.value(SERIES_TIME)
       description = dcm.value(SERIES_DESCR)
       # Create the CRSeries instance:
-      crs = self.new(series_uid, modality, study, :class_uid => class_uid, :date => date, :time => time, :description => description)
+      crs = self.new(series_uid, study, :class_uid => class_uid, :date => date, :time => time, :description => description)
       crs.add(dcm)
       return crs
     end
