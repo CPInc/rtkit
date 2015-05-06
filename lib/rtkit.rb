@@ -75,8 +75,6 @@ require_relative 'rtkit/collimator_setup'
 
 # Modify the source application entity title of the DICOM module:
 DICOM.source_app_title = "RTKIT"
-# Set a high threshold for the log level of the DICOM module's logger:
-DICOM.logger.level = Logger::FATAL
 
 # Use ruby-dicom's UID as our DICOM Root UID:
 RTKIT.dicom_root = DICOM::UID_ROOT
